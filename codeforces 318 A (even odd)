@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	long long int n,k,e,o,t;
+	cin>>n>>k;
+	if(n%2==0)
+	{
+	    e=n/2;
+	    o=n/2;
+	}
+	else
+	{
+	    e=n/2;
+	    o=e+1;
+	}
+	if(k<=o)
+	{
+	  t=1+2*(k-1);
+	  cout<<t;
+	}
+	else
+	{
+	    k=k-o;
+	    t=2+2*(k-1);
+	    cout<<t;
+	}
+	return 0;
+}
